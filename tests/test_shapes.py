@@ -1,6 +1,6 @@
 import pytest
 import pygame
-from dj_visuals.shapes import Polygon
+from goodbyeVisuals.shapes import Polygon
 
 def test_polygon_creation():
     polygon = Polygon(100, 100, 50, 6, (255, 255, 255))
