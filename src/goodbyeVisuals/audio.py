@@ -1,7 +1,7 @@
 import numpy as np
 from pydub import AudioSegment
 from scipy.signal import butter, filtfilt
-import pyaudio
+# import pyaudio
 import struct
 import threading
 from typing import List, Tuple
