@@ -1,7 +1,0 @@
-Collecting scipy
-  Downloading scipy-1.14.1-cp310-cp310-macosx_14_0_x86_64.whl.metadata (60 kB)
-Requirement already satisfied: numpy<2.3,>=1.23.5 in /Users/AdamHarris/miniconda3/envs/goodbyeVisuals/lib/python3.10/site-packages (from scipy) (2.2.0)
-Downloading scipy-1.14.1-cp310-cp310-macosx_14_0_x86_64.whl (25.5 MB)
-   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 25.5/25.5 MB 4.6 MB/s eta 0:00:00
-Installing collected packages: scipy
-Successfully installed scipy-1.14.1
