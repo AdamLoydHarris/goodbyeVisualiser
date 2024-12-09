@@ -18,7 +18,7 @@ class Shape(ABC):
     def draw(self, surface: pygame.Surface) -> None:
         """Draw the shape on the given surface."""
         pass
-    
+
 class Circle(Shape):
     def __init__(
         self,
@@ -74,3 +74,8 @@ class Polygon(Shape):
             point_y = self.y + self.radius * math.sin(angle)
             points.append((point_x, point_y))
         pygame.draw.polygon(surface, self.color, points, 2)
+
+class AudioReactiveShape:
+    def update_with_audio(self, bass_intensity: float) -> None:
+        """Update shape based on audio intensity"""
+        self.scale = 1.0 + bass_intensity * 0.5  # Adjust multiplier for effect strength
