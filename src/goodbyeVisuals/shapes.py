@@ -34,16 +34,22 @@ class Circle(Shape):
         self.radius = radius
         self.pulse_speed = pulse_speed
         self.pulse_range = pulse_range
-        self.time = 0
+        self.time = 100
         
     def update(self) -> None:
         """Update the circle's pulse animation."""
         self.time += 0.02 * self.pulse_speed
         self.radius = self.base_radius + math.sin(self.time) * self.pulse_range
+        if self.time%400<200:
+            self.x += 0.04 * self.pulse_speed
+        else:
+            self.x -= 0.04 * self.pulse_speed
+        # self.color = tuple([(self.radius*x/1.2)%255 for x in self.color])
         
     def draw(self, surface: pygame.Surface) -> None:
         """Draw the circle on the given surface."""
         pygame.draw.circle(surface, self.color, (int(self.x), int(self.y)), int(self.radius), 2)
+        
 
 class Polygon(Shape):
     def __init__(
